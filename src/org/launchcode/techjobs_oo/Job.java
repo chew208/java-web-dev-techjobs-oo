@@ -28,6 +28,16 @@ public class Job {
 
     }
 
+    @Override
+    public String toString() {
+        return  "ID: " + id + "\n" +
+                "Name: " + name + "\n" +
+                "Employer: " + employer + "\n" +
+                "Location: " + location + "\n" +
+                "Position Type: " + positionType.getValue() + "\n" +
+                "Core Competency: " + coreCompetency ;
+    }
+
     public String getName() {
         return name;
     }
