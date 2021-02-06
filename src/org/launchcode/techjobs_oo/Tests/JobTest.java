@@ -26,11 +26,11 @@ public class JobTest {
         assertTrue(jobSearchField instanceof Job);
     }
 
-   /* @Test
+    @Test
     public void testJobsForEquality() {
-        Object jobOne = new Job("Product tester", "ACME", "Desert", "Quality control", "Persistence");
-        Object jobTwo = new Job("Product tester", "ACME", "Desert", "Quality control", "Persistence");
-
-    }*/
+        Object jobOne = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        Object jobTwo = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertFalse(jobOne.equals(jobTwo));
+    }
 
 }
