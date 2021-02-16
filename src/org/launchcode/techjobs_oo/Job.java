@@ -30,12 +30,12 @@ public class Job extends JobField{
 
     @Override
     public String toString() {
-        return  "ID: " + id + "\n" +
+        return  "\nID: " + id + "\n" +
                 "Name: " + name + "\n" +
                 "Employer: " + employer + "\n" +
                 "Location: " + location + "\n" +
                 "Position Type: " + positionType.getValue() + "\n" +
-                "Core Competency: " + coreCompetency ;
+                "Core Competency: " + coreCompetency + "\n";
     }
 
     public String getName() {
